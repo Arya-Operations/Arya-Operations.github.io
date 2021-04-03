@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from liquidbounce.net/docs/ScriptAPI by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Apr 2021 22:13:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiquidBounce &bull; Docs &bull; ScriptAPI</title>
+<base >
+<meta name="author" content="CCBlueX">
+<meta name="page-topic" content="LiquidBounce">
+<meta name="description" content="ScriptAPI">
+<meta http-equiv="content-language" content="en">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="liquidbounce, liquid, bounce, hack, hacked client, cheat, minecraft, mc, free, download, mc, mojang, hacker, cheater">
+<meta property="og:image" content="../img/logos/favicon.png">
+<script src="../cdn-cgi/apps/head/NngbkqOVXX-YasdApopc2nOQlvc.js"></script><link rel="icon" type="image/png" href="../img/logos/favicon.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/custom.css">
+<link rel="stylesheet" href="../css/prism.css">
+<link rel="stylesheet" href="../css/docs.css">
+<script src="../js/modernizr.js"></script>
+</head>
+<body class="">
+<div class="page js-page ">
+<div class="header header-over large">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-6 col-xs-6">
+<a href="../index.html" class="logo-image logo-animated">
+<img src="../img/logos/logo-light.svg" alt="logo">
+</a>
+</div>
+<div class="col-md-9 col-sm-6 col-xs-6">
+<nav class="right helper">
+<ul class="menu sf-menu js-menu menu-light">
+<li>
+<a href="../index.html">Home</a>
+</li>
+<li>
+<a href="../download.html">Download</a>
+</li>
+<li>
+<a href="../donate.html">Donate</a>
+</li>
+<li>
+<a href="../changelogs.html">Changelogs</a>
+</li>
+<li>
+<a href="../scripts/index.html">Scripts</a>
+</li>
+<li>
+<a href="#">Documentation</a>
+<ul>
+<li>
+<a href="Tutorials.html">Tutorials</a>
+<ul>
+<li>
+<a href="Tutorials/Installation.html">Installation</a>
+</li>
+<li>
+<a href="Tutorials/Installing%20a%20Script.html">Installing a Script</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="CustomHUD.html">CustomHUD</a>
+<ul>
+<li>
+<a href="CustomHUD/Overview.html">Overview</a>
+</li>
+<li>
+<a href="CustomHUD/Elements.html">Elements</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="AutoSettings.html">AutoSettings</a>
+<ul>
+<li>
+<a href="AutoSettings/Overview.html">Overview</a>
+</li>
+
+<li>
+<a href="AutoSettings/Local%20Settings.html">Local Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="ScriptAPI.html">ScriptAPI</a>
+<ul>
+<li>
+<a href="ScriptAPI/Getting%20Started.html">Getting Started</a>
+</li>
+<li>
+<a href="ScriptAPI/Using%20Java%20Classes.html">Using Java Classes</a>
+</li>
+<li>
+<a href="ScriptAPI/Registering%20a%20Script.html">Registering a Script</a>
+</li>
+<li>
+<a href="ScriptAPI/Global%20Classes.html">Global Classes</a>
+</li>
+<li>
+<a href="ScriptAPI/Global%20Instances.html">Global Instances</a>
+</li>
+<li>
+<a href="ScriptAPI/Creating%20Modules.html">Creating Modules</a>
+</li>
+<li>
+<a href="ScriptAPI/Creating%20Commands.html">Creating Commands</a>
+</li>
+<li>
+<a href="ScriptAPI/Creating%20Inventory%20Tabs.html">Creating Inventory Tabs</a>
+</li>
+<li>
+<a href="ScriptAPI/Setting%20up%20Babel.html">Setting up Babel</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">Community</a>
+<ul>
+<li>
+<a target="_blank" href="https://youtube.com/ccbluex">YouTube</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex">Twitter</a>
+</li>
+<li>
+<a target="_blank" href="https://d.tube/#!/c/ccbluex">D.Tube</a>
+</li>
+<li>
+<a target="_blank" href="https://guilded.gg/CCBlueX">Guilded (Discord)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://forums.ccbluex.net/">Forum</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="header-back header-back-simple header-back-small">
+<div class="header-back-container">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+ <div class="page-info page-info-simple">
+<h1 class="page-title">ScriptAPI</h1>
+<h2 class="page-description">Documentation / ScriptAPI</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content">
+<div class="container">
+<div class="layout with-right-sidebar js-layout">
+<div class="row">
+<div class="col-md-9">
+<div class="main-content">
+<h2>ScriptAPI</h2>
+<div class="faq-article" id="js-structure">
+<a href="ScriptAPI/Getting%20Started.html"><h4 class="faq-article-title">Getting Started</h4></a>
+<div class="faq-article-content">
+<p>
+Info
+The documentation on this website only refers to the latest version of the script API, which was introduced in LiquidBounce b72. All new scripts should use it. However, if you need the old documentation, you can still find it in this GitHub repository.
+ScriptManag...</p>
+</div>
+</div>
+<div class="faq-article" id="js-structure">
+<a href="ScriptAPI/Using%20Java%20Classes.html"><h4 class="faq-article-title">Using Java Classes</h4></a>
+<div class="faq-article-content">
+<p>Java classes
+Since, as mentioned in the introduction, Nashorn is able to access Java classes directly, it is possible to solve most problems with the script API almost exactly as one would do in Java. For this purpose, a method is used that is provided by Nashorn itself. It allows the developer to i...</p>
+</div>
+</div>
+<div class="faq-article" id="js-structure">
+<a href="ScriptAPI/Registering%20a%20Script.html"><h4 class="faq-article-title">Registering a Script</h4></a>
+<div class="faq-article-content">
+<p>Scripts
+Each script has to be manually registered with the client before beginning to create modules, commands or inventory tabs. For this purpose the ScriptAPI has a global method to which some information about the script must also be passed. This method is registerScript.
+Registering a script
+The...</p>
+</div>
+</div>
+<div class="faq-article" id="js-structure">
+<a href="ScriptAPI/Global%20Classes.html"><h4 class="faq-article-title">Global Classes</h4></a>
+<div class="faq-article-content">
+<p>Chat
+The Chat class simplifies interacting with the Minecraft Chat.
+Method Summary
+Chat.print(text)
+Prints the passed string client-side in the chat.
+List of arguments:
+text, the string to be printed to the chat.
+Example:
+Chat.print("Axolotl are epic!")
+Setting
+The Setting class allows the creati...</p>
+</div>
+</div>
+<div class="faq-article" id="js-structure">
+<a href="ScriptAPI/Global%20Instances.html"><h4 class="faq-article-title">Global Instances</h4></a>
+<div class="faq-article-content">
+<p>mc
+mc contains the Minecraft instance (Minecraft.getMinecraft()) It is the most important instance in every script. It can be used to do almost any manipulation desired to the game. Instead of listing all available methods and fields here, we refer to the Minecraft JavaDocs, which can also be found ...</p>
+</div>
+</div>
+<div class="faq-article" id="js-structure">
+<a href="ScriptAPI/Creating%20Modules.html"><h4 class="faq-article-title">Creating Modules</h4></a>
+<div class="faq-article-content">
+<p></p>
+</div>
+</div>
+<div class="faq-article" id="js-structure">
+<a href="ScriptAPI/Creating%20Commands.html"><h4 class="faq-article-title">Creating Commands</h4></a>
+<div class="faq-article-content">
+<p>ScriptAPI commands
+Commands created with the script API can be executed just like regular commands. Compared to modules, they are especially useful when a particular action is to be performed only once and not continuously.
+Creating a command
+script.registerCommand(options, callback)
+Each command ha...</p>
+</div>
+</div>
+<div class="faq-article" id="js-structure">
+<a href="ScriptAPI/Creating%20Inventory%20Tabs.html"><h4 class="faq-article-title">Creating Inventory Tabs</h4></a>
+<div class="faq-article-content">
+<p>ScriptAPI inventory tabs
+LiquidBounce has a secondary inventory that can be accessed in creative mode. It contains useful items, but also items that can be used to exploit in-game bugs. With the ScriptAPI it is also possible to add additional tabs with your own items.
+Creating a tab
+script.registerT...</p>
+</div>
+</div>
+<div class="faq-article" id="js-structure">
+<a href="ScriptAPI/Setting%20up%20Babel.html"><h4 class="faq-article-title">Setting up Babel</h4></a>
+<div class="faq-article-content">
+<p>
+Setting up Babel
+When writing scripts for LiquidBounce's ScriptAPI, you are restricted by the fact that Nashorn, the script engine used, only supports JavaScript up to version ES5. In other words, many features that were introduced in newer revisions of the language are not natively supported by th...</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 hidden-sm hidden-xs">
+<div class="sidebar js-sidebar-fixed">
+<nav class="menu-vertical-wrapper">
+<ul class="menu-vertical  js-menu-vertical" data-prepend-to=".js-layout" data-select="Menu">
+<li>
+<a href="#">Tutorials</a>
+<ul>
+<li>
+<a href="Tutorials/Installation.html">Installation</a>
+</li>
+ <li>
+<a href="Tutorials/Installing%20a%20Script.html">Installing a Script</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">CustomHUD</a>
+<ul>
+<li>
+<a href="CustomHUD/Overview.html">Overview</a>
+</li>
+<li>
+<a href="#">Elements</a>
+<ul>
+<li>
+<a href="CustomHUD/Elements/Text.html">Text</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">AutoSettings</a>
+<ul>
+<li>
+<a href="AutoSettings/Overview.html">Overview</a>
+</li>
+<li>
+<a href="AutoSettings/Local%20Settings.html">Local Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">ScriptAPI</a>
+<ul>
+<li>
+<a href="ScriptAPI/Getting%20Started.html">Getting Started</a>
+</li>
+<li>
+<a href="ScriptAPI/Using%20Java%20Classes.html">Using Java Classes</a>
+</li>
+
+<li>
+<a href="ScriptAPI/Registering%20a%20Script.html">Registering a Script</a>
+</li>
+<li>
+<a href="ScriptAPI/Global%20Classes.html">Global Classes</a>
+</li>
+<li>
+<a href="ScriptAPI/Global%20Instances.html">Global Instances</a>
+</li>
+<li>
+<a href="#">Creating Modules</a>
+<ul>
+<li>
+<a href="ScriptAPI/Creating%20Modules/Overview.html">Overview</a>
+</li>
+<li>
+<a href="ScriptAPI/Creating%20Modules/Supported%20Events.html">Supported Events</a>
+</li>
+<li>
+<a href="ScriptAPI/Creating%20Modules/Settings.html">Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="ScriptAPI/Creating%20Commands.html">Creating Commands</a>
+</li>
+<li>
+<a href="ScriptAPI/Creating%20Inventory%20Tabs.html">Creating Inventory Tabs</a>
+</li>
+<li>
+<a href="ScriptAPI/Setting%20up%20Babel.html">Setting up Babel</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="js-footer-is-fixed">
+<div class="footer-extended">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="footer-extended-container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">About</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="../tos.html">Terms of Service</a>
+</li>
+<li>
+<a href="../privacy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="https://status.ccbluex.net/">Status</a>
+</li>
+<li>
+<a href="mailto:support@liquidbounce.net">Contact Us</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Downloads</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="../download.html">Releases</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/CCBlueX/LiquidBounce">Source code</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/CCBlueX/LiquidBounce/blob/master/LICENSE">License</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Docs</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="Tutorials.html">Tutorials</a>
+</li>
+<li>
+<a href="CustomHUD.html">CustomHUD</a>
+</li>
+<li>
+<a href="AutoSettings.html">AutoSettings</a>
+</li>
+ <li>
+<a href="ScriptAPI.html">ScriptAPI</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="clearfix visible-xs-block"></div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Community</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a target="_blank" href="https://forums.ccbluex.net/">Forum</a>
+</li>
+<li>
+<a target="_blank" href="https://guilded.gg/CCBlueX">Guilded</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/ccbluex">YouTube</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex">Twitter</a>
+</li>
+<li>
+<a target="_blank" href="https://d.tube/#!/c/ccbluex">D.Tube</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-8">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Subscribe</h5>
+<ul class="socials-footer">
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-twitter"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-youtube-play"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-github-alt"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="footer-logo-wrapper">
+<a href="../index-2.html" class="logo-image ">
+<img src="../img/logos/ccbluex-logo.png" alt="logo">
+</a>
+<p class="slogan">Made
+<br>By
+<br>CCBlueX
+</p>
+ </div>
+</div>
+<div class="col-md-9 col-sm-9 col-xs-12">
+<div class="footer-wrapper">
+<span class="scroll-top js-scroll-top">
+<i class="fa fa-angle-up"></i>
+</span>
+<ul class="footer-menu helper right">
+<li>
+<a href="mailto:support@liquidbounce.net">support@liquidbounce.net</a>
+</li>
+</ul>
+<p class="copyright helper right">&copy;
+<a href="https://ccbluex.net/">CCBlueX</a> 2015-2021 </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../js/prism.js"></script>
+<script src="../js/all.js"></script>
+</body>
+
+<!-- Mirrored from liquidbounce.net/docs/ScriptAPI by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Apr 2021 22:13:26 GMT -->
+</html>

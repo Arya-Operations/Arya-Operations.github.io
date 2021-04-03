@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from liquidbounce.net/docs/Tutorials/Installing a Script by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Apr 2021 22:13:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiquidBounce &bull; Docs &bull; Tutorials &bull; Installing a Script</title>
+<base >
+<meta name="author" content="CCBlueX">
+<meta name="page-topic" content="LiquidBounce">
+<meta name="description" content="How to install LiquidBounce scripts
+LiquidBounce provides an interface that allows third-party developers from our community to enhance the client with new features. This interface is used by so-called scripts, which are written in JavaScript. If you would like to learn more about the te">
+<meta http-equiv="content-language" content="en">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="liquidbounce, liquid, bounce, hack, hacked client, cheat, minecraft, mc, free, download, mc, mojang, hacker, cheater">
+<meta property="og:image" content="../../img/logos/favicon.png">
+<script src="../../cdn-cgi/apps/head/NngbkqOVXX-YasdApopc2nOQlvc.js"></script><link rel="icon" type="image/png" href="../../img/logos/favicon.png">
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/prism.css">
+<link rel="stylesheet" href="../../css/docs.css">
+<script src="../../js/modernizr.js"></script>
+</head>
+<body class="">
+<div class="page js-page ">
+<div class="header header-over large">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-6 col-xs-6">
+<a href="../../index.html" class="logo-image logo-animated">
+<img src="../../img/logos/logo-light.svg" alt="logo">
+</a>
+</div>
+<div class="col-md-9 col-sm-6 col-xs-6">
+<nav class="right helper">
+<ul class="menu sf-menu js-menu menu-light">
+<li>
+<a href="../../index.html">Home</a>
+</li>
+<li>
+<a href="../../download.html">Download</a>
+</li>
+<li>
+<a href="../../donate.html">Donate</a>
+</li>
+<li>
+<a href="../../changelogs.html">Changelogs</a>
+</li>
+<li>
+<a href="../../scripts/index.html">Scripts</a>
+</li>
+<li>
+<a href="#">Documentation</a>
+<ul>
+<li>
+<a href="../Tutorials.html">Tutorials</a>
+<ul>
+<li>
+<a href="Installation.html">Installation</a>
+</li>
+<li>
+<a href="Installing%20a%20Script.html">Installing a Script</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="../CustomHUD.html">CustomHUD</a>
+<ul>
+<li>
+<a href="../CustomHUD/Overview.html">Overview</a>
+</li>
+<li>
+<a href="../CustomHUD/Elements.html">Elements</a>
+</li>
+</ul>
+</li>
+ <li>
+<a href="../AutoSettings.html">AutoSettings</a>
+<ul>
+<li>
+<a href="../AutoSettings/Overview.html">Overview</a>
+</li>
+<li>
+<a href="../AutoSettings/Local%20Settings.html">Local Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="../ScriptAPI.html">ScriptAPI</a>
+<ul>
+<li>
+<a href="../ScriptAPI/Getting%20Started.html">Getting Started</a>
+</li>
+<li>
+<a href="../ScriptAPI/Using%20Java%20Classes.html">Using Java Classes</a>
+</li>
+<li>
+<a href="../ScriptAPI/Registering%20a%20Script.html">Registering a Script</a>
+</li>
+<li>
+<a href="../ScriptAPI/Global%20Classes.html">Global Classes</a>
+</li>
+<li>
+<a href="../ScriptAPI/Global%20Instances.html">Global Instances</a>
+</li>
+<li>
+<a href="../ScriptAPI/Creating%20Modules.html">Creating Modules</a>
+</li>
+<li>
+<a href="../ScriptAPI/Creating%20Commands.html">Creating Commands</a>
+</li>
+<li>
+<a href="../ScriptAPI/Creating%20Inventory%20Tabs.html">Creating Inventory Tabs</a>
+</li>
+<li>
+<a href="../ScriptAPI/Setting%20up%20Babel.html">Setting up Babel</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">Community</a>
+<ul>
+<li>
+<a target="_blank" href="https://youtube.com/ccbluex">YouTube</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex">Twitter</a>
+</li>
+<li>
+<a target="_blank" href="https://d.tube/#!/c/ccbluex">D.Tube</a>
+</li>
+<li>
+<a target="_blank" href="https://guilded.gg/CCBlueX">Guilded (Discord)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://forums.ccbluex.net/">Forum</a>
+</li>
+</ul>
+</nav>
+</div>
+ </div>
+</div>
+</div>
+<div class="header-back header-back-simple header-back-small">
+<div class="header-back-container">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="page-info page-info-simple">
+<h1 class="page-title">Installing a Script</h1>
+<h2 class="page-description">Documentation / Tutorials / Installing a Script</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content">
+<div class="container">
+<div class="layout with-right-sidebar js-layout">
+<div class="row">
+<div class="col-md-9">
+<div class="main-content">
+<p><a href='https://github.com/CCBlueX/Documentation/tree/master/md/tutorials/script_installation.md'><i class='fa fa-github-alt'></i> Contribute to this page on GitHub</a></p><h2>How to install LiquidBounce scripts</h2>
+<p>LiquidBounce provides an interface that allows third-party developers from our community to enhance the client with new features. This interface is used by so-called scripts, which are written in JavaScript. If you would like to learn more about the technical aspects of this feature or to develop your own scripts, the documentation will help you. This tutorial only covers the installation of already existing scripts.</p>
+<p>There are essentially two ways to install a script. Both are outlined below, with the first method being recommended for newcomers.</p>
+<h3>Method 1: Using the import feature</h3>
+<p>LiquidBounce has a simple functionality that allows you to import single script files as well as whole zip archives with numerous files. Please make sure that your game is <strong>not</strong> in full screen mode during the following process.</p>
+<ol>
+<li>Find a script that you want to install. If you don't know where to get scripts from, take a look at <a href="../../scripts/index.html">this page</a> or the respective category in our <a href="https://forums.ccbluex.net/category/9/scripts">forum</a>.</li>
+<li>Launch LiquidBounce.</li>
+<li>In the main menu first press on <code>Mods</code> and then on <code>Scripts</code>. This menu lists all installed scripts including name, author and current version number.</li>
+<li>Select the file you want to import in the file dialog. Single scripts as well as whole zip archives can be imported. If no errors have occurred, the script should now also be listed.</li>
+<li>It is recommended that you restart the client now to ensure that the script is fully loaded and no unforeseen problems arise.</li>
+</ol>
+<p>That's it! The script should now be fully installed.</p>
+<h3>Method 2: Manual installation</h3>
+<p>It is also possible to install scripts manually by copying them into their designated folder. This method is recommended if you already know a bit about the installation process and want to shorten it.</p>
+<ol>
+<li>Open the Scripts folder. It is located in the LiquidBounce directory, which in turn is located in the Minecraft directory by default. If you use the default launcher, you can usually find it at <code>%appdata%/.minecraft</code> on Windows. If you use our LiquidLauncher instead, you can find it at <code>%appdata%/.LiquidLauncher/gameDir</code>.</li>
+<li>Copy the script file you want to install into this folder. If it is a zip file, extract it first.</li>
+<li>Launch LiquidBounce.</li>
+<li>Navigate to the script manager screen and make sure the script has been loaded sucessfully.</li>
+</ol>
+</div>
+</div>
+<div class="col-md-3 hidden-sm hidden-xs">
+<div class="sidebar js-sidebar-fixed">
+<nav class="menu-vertical-wrapper">
+<ul class="menu-vertical  js-menu-vertical" data-prepend-to=".js-layout" data-select="Menu">
+<li>
+<a href="#">Tutorials</a>
+<ul>
+<li>
+<a href="Installation.html">Installation</a>
+</li>
+<li>
+<a href="Installing%20a%20Script.html">Installing a Script</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">CustomHUD</a>
+<ul>
+<li>
+<a href="../CustomHUD/Overview.html">Overview</a>
+</li>
+<li>
+<a href="#">Elements</a>
+<ul>
+<li>
+<a href="../CustomHUD/Elements/Text.html">Text</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">AutoSettings</a>
+<ul>
+<li>
+<a href="../AutoSettings/Overview.html">Overview</a>
+</li>
+<li>
+<a href="../AutoSettings/Local%20Settings.html">Local Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">ScriptAPI</a>
+ <ul>
+<li>
+<a href="../ScriptAPI/Getting%20Started.html">Getting Started</a>
+</li>
+<li>
+<a href="../ScriptAPI/Using%20Java%20Classes.html">Using Java Classes</a>
+</li>
+<li>
+<a href="../ScriptAPI/Registering%20a%20Script.html">Registering a Script</a>
+</li>
+<li>
+<a href="../ScriptAPI/Global%20Classes.html">Global Classes</a>
+</li>
+<li>
+<a href="../ScriptAPI/Global%20Instances.html">Global Instances</a>
+</li>
+<li>
+<a href="#">Creating Modules</a>
+<ul>
+<li>
+<a href="../ScriptAPI/Creating%20Modules/Overview.html">Overview</a>
+</li>
+<li>
+<a href="../ScriptAPI/Creating%20Modules/Supported%20Events.html">Supported Events</a>
+</li>
+<li>
+<a href="../ScriptAPI/Creating%20Modules/Settings.html">Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="../ScriptAPI/Creating%20Commands.html">Creating Commands</a>
+</li>
+<li>
+<a href="../ScriptAPI/Creating%20Inventory%20Tabs.html">Creating Inventory Tabs</a>
+ </li>
+<li>
+<a href="../ScriptAPI/Setting%20up%20Babel.html">Setting up Babel</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="js-footer-is-fixed">
+<div class="footer-extended">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="footer-extended-container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">About</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="../../tos.html">Terms of Service</a>
+</li>
+<li>
+<a href="../../privacy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="https://status.ccbluex.net/">Status</a>
+</li>
+<li>
+<a href="mailto:support@liquidbounce.net">Contact Us</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Downloads</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="../../download.html">Releases</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/CCBlueX/LiquidBounce">Source code</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/CCBlueX/LiquidBounce/blob/master/LICENSE">License</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+ <h5 class="footer-extended-menu-title">Docs</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="../Tutorials.html">Tutorials</a>
+</li>
+<li>
+<a href="../CustomHUD.html">CustomHUD</a>
+</li>
+<li>
+<a href="../AutoSettings.html">AutoSettings</a>
+</li>
+<li>
+<a href="../ScriptAPI.html">ScriptAPI</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="clearfix visible-xs-block"></div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Community</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a target="_blank" href="https://forums.ccbluex.net/">Forum</a>
+</li>
+<li>
+<a target="_blank" href="https://guilded.gg/CCBlueX">Guilded</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/ccbluex">YouTube</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex">Twitter</a>
+</li>
+<li>
+<a target="_blank" href="https://d.tube/#!/c/ccbluex">D.Tube</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-8">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Subscribe</h5>
+<ul class="socials-footer">
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-twitter"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-youtube-play"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-github-alt"></i>
+</a>
+</li>
+ </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="footer-logo-wrapper">
+<a href="../../index-2.html" class="logo-image ">
+<img src="../../img/logos/ccbluex-logo.png" alt="logo">
+</a>
+<p class="slogan">Made
+<br>By
+<br>CCBlueX
+</p>
+</div>
+</div>
+<div class="col-md-9 col-sm-9 col-xs-12">
+<div class="footer-wrapper">
+<span class="scroll-top js-scroll-top">
+<i class="fa fa-angle-up"></i>
+</span>
+<ul class="footer-menu helper right">
+<li>
+<a href="mailto:support@liquidbounce.net">support@liquidbounce.net</a>
+</li>
+</ul>
+<p class="copyright helper right">&copy;
+<a href="https://ccbluex.net/">CCBlueX</a> 2015-2021 </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../../js/prism.js"></script>
+<script src="../../js/all.js"></script>
+</body>
+
+<!-- Mirrored from liquidbounce.net/docs/Tutorials/Installing a Script by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Apr 2021 22:13:24 GMT -->
+</html>

@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from liquidbounce.net/docs/ScriptAPI/Creating Commands by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Apr 2021 22:13:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiquidBounce &bull; Docs &bull; ScriptAPI &bull; Creating Commands</title>
+<base >
+<meta name="author" content="CCBlueX">
+<meta name="page-topic" content="LiquidBounce">
+<meta name="description" content="ScriptAPI commands
+Commands created with the script API can be executed just like regular commands. Compared to modules, they are especially useful when a particular action is to be performed only once and not continuously.
+Creating a command
+script.registerCommand(optio">
+<meta http-equiv="content-language" content="en">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="liquidbounce, liquid, bounce, hack, hacked client, cheat, minecraft, mc, free, download, mc, mojang, hacker, cheater">
+<meta property="og:image" content="../../img/logos/favicon.png">
+<script src="../../cdn-cgi/apps/head/NngbkqOVXX-YasdApopc2nOQlvc.js"></script><link rel="icon" type="image/png" href="../../img/logos/favicon.png">
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/custom.css">
+<link rel="stylesheet" href="../../css/prism.css">
+<link rel="stylesheet" href="../../css/docs.css">
+<script src="../../js/modernizr.js"></script>
+</head>
+<body class="">
+<div class="page js-page ">
+<div class="header header-over large">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-6 col-xs-6">
+<a href="../../index.html" class="logo-image logo-animated">
+<img src="../../img/logos/logo-light.svg" alt="logo">
+</a>
+</div>
+<div class="col-md-9 col-sm-6 col-xs-6">
+<nav class="right helper">
+<ul class="menu sf-menu js-menu menu-light">
+<li>
+<a href="../../index.html">Home</a>
+</li>
+<li>
+<a href="../../download.html">Download</a>
+</li>
+<li>
+<a href="../../donate.html">Donate</a>
+</li>
+<li>
+<a href="../../changelogs.html">Changelogs</a>
+</li>
+<li>
+<a href="../../scripts/index.html">Scripts</a>
+</li>
+<li>
+<a href="#">Documentation</a>
+<ul>
+<li>
+<a href="../Tutorials.html">Tutorials</a>
+<ul>
+<li>
+<a href="../Tutorials/Installation.html">Installation</a>
+</li>
+<li>
+<a href="../Tutorials/Installing%20a%20Script.html">Installing a Script</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="../CustomHUD.html">CustomHUD</a>
+<ul>
+<li>
+<a href="../CustomHUD/Overview.html">Overview</a>
+</li>
+<li>
+<a href="../CustomHUD/Elements.html">Elements</a>
+</li>
+</ul>
+</li>
+<li>
+ <a href="../AutoSettings.html">AutoSettings</a>
+<ul>
+<li>
+<a href="../AutoSettings/Overview.html">Overview</a>
+</li>
+<li>
+<a href="../AutoSettings/Local%20Settings.html">Local Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="../ScriptAPI.html">ScriptAPI</a>
+<ul>
+<li>
+<a href="Getting%20Started.html">Getting Started</a>
+</li>
+<li>
+<a href="Using%20Java%20Classes.html">Using Java Classes</a>
+</li>
+<li>
+<a href="Registering%20a%20Script.html">Registering a Script</a>
+</li>
+<li>
+<a href="Global%20Classes.html">Global Classes</a>
+</li>
+<li>
+<a href="Global%20Instances.html">Global Instances</a>
+</li>
+<li>
+<a href="Creating%20Modules.html">Creating Modules</a>
+</li>
+<li>
+<a href="Creating%20Commands.html">Creating Commands</a>
+</li>
+<li>
+<a href="Creating%20Inventory%20Tabs.html">Creating Inventory Tabs</a>
+</li>
+<li>
+<a href="Setting%20up%20Babel.html">Setting up Babel</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">Community</a>
+<ul>
+<li>
+<a target="_blank" href="https://youtube.com/ccbluex">YouTube</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex">Twitter</a>
+</li>
+<li>
+<a target="_blank" href="https://d.tube/#!/c/ccbluex">D.Tube</a>
+</li>
+<li>
+<a target="_blank" href="https://guilded.gg/CCBlueX">Guilded (Discord)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://forums.ccbluex.net/">Forum</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="header-back header-back-simple header-back-small">
+<div class="header-back-container">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="page-info page-info-simple">
+<h1 class="page-title">Creating Commands</h1>
+<h2 class="page-description">Documentation / ScriptAPI / Creating Commands</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content">
+<div class="container">
+<div class="layout with-right-sidebar js-layout">
+<div class="row">
+<div class="col-md-9">
+<div class="main-content">
+<p><a href='https://github.com/CCBlueX/Documentation/tree/master/md/scriptapi_v2/command/overview.md'><i class='fa fa-github-alt'></i> Contribute to this page on GitHub</a></p><h2>ScriptAPI commands</h2>
+<p>Commands created with the script API can be executed just like regular commands. Compared to modules, they are especially useful when a particular action is to be performed only once and not continuously.</p>
+<h3>Creating a command</h3>
+<h4>script.registerCommand(options, callback)</h4>
+<p>Each command has to be registered with the client via the instance of the script. This is done using the <code>registerCommand</code> method. It creates a new instance of <a href="https://github.com/CCBlueX/LiquidBounce/blob/master/1.8.9-Forge/src/main/java/net/ccbluex/liquidbounce/script/api/ScriptCommand.kt">ScriptCommand</a> and passes it to the callback function. <br>
+The following table describes the properties of the <code>options</code> object.</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>Name of the command.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>aliases</td>
+<td>Array containing alternative names for the command.</td>
+<td>array</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class="language-js">script.registerCommand({
+    name: "testCommand",
+    aliases: ["demoCommand", "exampleCommand"]
+}, function(command) {
+
+});</code></pre>
+<h3>Handling execution</h3>
+<p>Commands have only one event: The execute event. It is called whenever the user executes the command using its name or one of its aliases. The execute event has to be registered with the client. The <a href="https://github.com/CCBlueX/LiquidBounce/blob/master/1.8.9-Forge/src/main/java/net/ccbluex/liquidbounce/script/api/ScriptCommand.kt">ScriptCommand</a> class has a method for this purpose.</p>
+<h3>module.on(&quot;execute&quot;, callback)</h3>
+<p>Registers the use of an event with the client.
+List of arguments:</p>
+<ul>
+<li>&quot;execute&quot;, name of the only available event.</li>
+<li>callback, function called whenever the event occurs. To it the arguments of the command executed are passed.</li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-js">command.on("execute", function(args) {
+    if (args.length &gt; 1) {
+        Chat.print(args[1]);
+    }
+});</code></pre>
+<h3>Full example of a command</h3>
+<pre><code class="language-js">script.registerCommand({
+    name: "testCommand",
+    aliases: ["demoCommand", "exampleCommand"]
+}, function(command) {
+    command.on("execute", function(args) {
+        if (args.length &gt; 1) {
+            Chat.print(args[1]);
+        }
+    });
+});</code></pre>
+</div>
+</div>
+<div class="col-md-3 hidden-sm hidden-xs">
+<div class="sidebar js-sidebar-fixed">
+<nav class="menu-vertical-wrapper">
+<ul class="menu-vertical  js-menu-vertical" data-prepend-to=".js-layout" data-select="Menu">
+<li>
+<a href="#">Tutorials</a>
+<ul>
+<li>
+<a href="../Tutorials/Installation.html">Installation</a>
+</li>
+<li>
+<a href="../Tutorials/Installing%20a%20Script.html">Installing a Script</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">CustomHUD</a>
+<ul>
+<li>
+<a href="../CustomHUD/Overview.html">Overview</a>
+</li>
+<li>
+<a href="#">Elements</a>
+<ul>
+<li>
+<a href="../CustomHUD/Elements/Text.html">Text</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">AutoSettings</a>
+<ul>
+<li>
+<a href="../AutoSettings/Overview.html">Overview</a>
+</li>
+<li>
+<a href="../AutoSettings/Local%20Settings.html">Local Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">ScriptAPI</a>
+<ul>
+
+<li>
+<a href="Getting%20Started.html">Getting Started</a>
+</li>
+<li>
+<a href="Using%20Java%20Classes.html">Using Java Classes</a>
+</li>
+<li>
+<a href="Registering%20a%20Script.html">Registering a Script</a>
+</li>
+<li>
+<a href="Global%20Classes.html">Global Classes</a>
+</li>
+<li>
+<a href="Global%20Instances.html">Global Instances</a>
+</li>
+<li>
+<a href="#">Creating Modules</a>
+<ul>
+<li>
+<a href="Creating%20Modules/Overview.html">Overview</a>
+</li>
+<li>
+<a href="Creating%20Modules/Supported%20Events.html">Supported Events</a>
+</li>
+<li>
+<a href="Creating%20Modules/Settings.html">Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="Creating%20Commands.html">Creating Commands</a>
+</li>
+<li>
+<a href="Creating%20Inventory%20Tabs.html">Creating Inventory Tabs</a>
+</li>
+
+<li>
+<a href="Setting%20up%20Babel.html">Setting up Babel</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="js-footer-is-fixed">
+<div class="footer-extended">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="footer-extended-container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">About</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="../../tos.html">Terms of Service</a>
+</li>
+<li>
+<a href="../../privacy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="https://status.ccbluex.net/">Status</a>
+</li>
+<li>
+<a href="mailto:support@liquidbounce.net">Contact Us</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Downloads</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="../../download.html">Releases</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/CCBlueX/LiquidBounce">Source code</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/CCBlueX/LiquidBounce/blob/master/LICENSE">License</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Docs</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="../Tutorials.html">Tutorials</a>
+</li>
+<li>
+<a href="../CustomHUD.html">CustomHUD</a>
+</li>
+<li>
+<a href="../AutoSettings.html">AutoSettings</a>
+</li>
+<li>
+<a href="../ScriptAPI.html">ScriptAPI</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="clearfix visible-xs-block"></div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Community</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a target="_blank" href="https://forums.ccbluex.net/">Forum</a>
+</li>
+<li>
+<a target="_blank" href="https://guilded.gg/CCBlueX">Guilded</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/ccbluex">YouTube</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex">Twitter</a>
+</li>
+<li>
+<a target="_blank" href="https://d.tube/#!/c/ccbluex">D.Tube</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-8">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Subscribe</h5>
+<ul class="socials-footer">
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-twitter"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-youtube-play"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-github-alt"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="footer-logo-wrapper">
+<a href="../../index-2.html" class="logo-image ">
+<img src="../../img/logos/ccbluex-logo.png" alt="logo">
+</a>
+<p class="slogan">Made
+<br>By
+<br>CCBlueX
+</p>
+</div>
+</div>
+<div class="col-md-9 col-sm-9 col-xs-12">
+<div class="footer-wrapper">
+<span class="scroll-top js-scroll-top">
+<i class="fa fa-angle-up"></i>
+</span>
+<ul class="footer-menu helper right">
+<li>
+<a href="mailto:support@liquidbounce.net">support@liquidbounce.net</a>
+</li>
+</ul>
+<p class="copyright helper right">&copy;
+<a href="https://ccbluex.net/">CCBlueX</a> 2015-2021 </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../../js/prism.js"></script>
+<script src="../../js/all.js"></script>
+</body>
+
+<!-- Mirrored from liquidbounce.net/docs/ScriptAPI/Creating Commands by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Apr 2021 22:13:27 GMT -->
+</html>

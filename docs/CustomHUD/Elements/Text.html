@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from liquidbounce.net/docs/CustomHUD/Elements/Text by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Apr 2021 22:13:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiquidBounce &bull; Docs &bull; CustomHUD &bull; Elements &bull; Text</title>
+<base >
+<meta name="author" content="CCBlueX">
+<meta name="page-topic" content="LiquidBounce">
+<meta name="description" content="Text Element
+The text element is one of the simplest and yet most important elements of the CustomHUD. On the one hand, it can be used to display static text, but on the other it is also capable of providing additional information about the player, the server and much more. The latter is">
+<meta http-equiv="content-language" content="en">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="liquidbounce, liquid, bounce, hack, hacked client, cheat, minecraft, mc, free, download, mc, mojang, hacker, cheater">
+<meta property="og:image" content="../../../img/logos/favicon.png">
+<script src="../../../cdn-cgi/apps/head/NngbkqOVXX-YasdApopc2nOQlvc.js"></script><link rel="icon" type="image/png" href="../../../img/logos/favicon.png">
+<link rel="stylesheet" href="../../../css/style.css">
+<link rel="stylesheet" href="../../../css/custom.css">
+<link rel="stylesheet" href="../../../css/prism.css">
+<link rel="stylesheet" href="../../../css/docs.css">
+<script src="../../../js/modernizr.js"></script>
+</head>
+<body class="">
+<div class="page js-page ">
+<div class="header header-over large">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-6 col-xs-6">
+<a href="../../../index.html" class="logo-image logo-animated">
+<img src="../../../img/logos/logo-light.svg" alt="logo">
+</a>
+</div>
+<div class="col-md-9 col-sm-6 col-xs-6">
+<nav class="right helper">
+<ul class="menu sf-menu js-menu menu-light">
+<li>
+<a href="../../../index.html">Home</a>
+</li>
+<li>
+<a href="../../../download.html">Download</a>
+</li>
+<li>
+<a href="../../../donate.html">Donate</a>
+</li>
+<li>
+<a href="../../../changelogs.html">Changelogs</a>
+</li>
+<li>
+<a href="../../../scripts/index.html">Scripts</a>
+</li>
+<li>
+<a href="#">Documentation</a>
+<ul>
+<li>
+<a href="../../Tutorials.html">Tutorials</a>
+<ul>
+<li>
+<a href="../../Tutorials/Installation.html">Installation</a>
+</li>
+<li>
+<a href="../../Tutorials/Installing%20a%20Script.html">Installing a Script</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="../../CustomHUD.html">CustomHUD</a>
+<ul>
+<li>
+<a href="../Overview.html">Overview</a>
+</li>
+<li>
+<a href="../Elements.html">Elements</a>
+</li>
+</ul>
+</li>
+ <li>
+<a href="../../AutoSettings.html">AutoSettings</a>
+<ul>
+<li>
+<a href="../../AutoSettings/Overview.html">Overview</a>
+</li>
+<li>
+<a href="../../AutoSettings/Local%20Settings.html">Local Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="../../ScriptAPI.html">ScriptAPI</a>
+<ul>
+<li>
+<a href="../../ScriptAPI/Getting%20Started.html">Getting Started</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Using%20Java%20Classes.html">Using Java Classes</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Registering%20a%20Script.html">Registering a Script</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Global%20Classes.html">Global Classes</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Global%20Instances.html">Global Instances</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Creating%20Modules.html">Creating Modules</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Creating%20Commands.html">Creating Commands</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Creating%20Inventory%20Tabs.html">Creating Inventory Tabs</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Setting%20up%20Babel.html">Setting up Babel</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">Community</a>
+<ul>
+<li>
+<a target="_blank" href="https://youtube.com/ccbluex">YouTube</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex">Twitter</a>
+</li>
+<li>
+<a target="_blank" href="https://d.tube/#!/c/ccbluex">D.Tube</a>
+</li>
+<li>
+<a target="_blank" href="https://guilded.gg/CCBlueX">Guilded (Discord)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://forums.ccbluex.net/">Forum</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="header-back header-back-simple header-back-small">
+<div class="header-back-container">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="page-info page-info-simple">
+<h1 class="page-title">Text</h1>
+<h2 class="page-description">Documentation / CustomHUD / Elements / Text</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content">
+<div class="container">
+<div class="layout with-right-sidebar js-layout">
+<div class="row">
+<div class="col-md-9">
+<div class="main-content">
+<p><a href='https://github.com/CCBlueX/Documentation/tree/master/md/customhud/elements/text.md'><i class='fa fa-github-alt'></i> Contribute to this page on GitHub</a></p><h2>Text Element</h2>
+<p>The text element is one of the simplest and yet most important elements of the CustomHUD. On the one hand, it can be used to display static text, but on the other it is also capable of providing additional information about the player, the server and much more. The latter is achieved by using so-called variables. These are replaced with their corresponding value by LiquidBounce in real time. For example, it is possible to display the current coordinates, the ping or the CPS.</p>
+<h4>How to use CustomHUD variables</h4>
+<p>Below you will find a list of the currently available variables. To use them, either create a new text element or click on an existing one and insert the desired variable.</p>
+<h4>Scaling an element</h4>
+<p>To change the size of a text element, press and hold the mouse over that element and scroll with your mouse wheel.</p>
+<h3>Available Variables</h3>
+<ul>
+<li><code>%x%</code> The player's x-position</li>
+<li><code>%y%</code> The player's y-position</li>
+<li><code>%z%</code> The player's z-position</li>
+<li><code>%fps%</code> Current FPS</li>
+<li><code>%date%</code> Today's date</li>
+<li><code>%time</code> Current time</li>
+<li><code>%username%</code> Current Minecraft username</li>
+<li><code>%ping%</code> Your average ping to the server</li>
+<li><code>%clientName%</code> Name of the client (LiquidBounce)</li>
+<li><code>%clientVersion%</code> Build number of the client</li>
+<li><code>%clientCreator%</code> Creator the of client (CCBlueX)</li>
+<li><code>%serverIp%</code> IP of the server you are currently playing on</li>
+<li><code>%lcps%</code> CPS of left mouse button</li>
+<li><code>%rcps%</code> CPS of right mouse button</li>
+<li><code>%mcps%</code> CPS of middle mouse button</li>
+<li><code>%cps%</code> Alias for <code>%rcps%</code> </li>
+<li><code>%velocity%</code> The player's velocity.</li>
+</ul>
+<h4>Example strings</h4>
+<ul>
+<li><code>Ping: %ping%</code></li>
+<li><code>X/Y/Z: %x%/%y%/%z%</code></li>
+<li><code>FPS: %fps%</code></li>
+</ul>
+<p><img src="../../../content/docs/images/customhud_variables.png" alt="Example" /></p>
+</div>
+</div>
+<div class="col-md-3 hidden-sm hidden-xs">
+<div class="sidebar js-sidebar-fixed">
+<nav class="menu-vertical-wrapper">
+<ul class="menu-vertical  js-menu-vertical" data-prepend-to=".js-layout" data-select="Menu">
+<li>
+<a href="#">Tutorials</a>
+<ul>
+<li>
+<a href="../../Tutorials/Installation.html">Installation</a>
+</li>
+<li>
+<a href="../../Tutorials/Installing%20a%20Script.html">Installing a Script</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">CustomHUD</a>
+<ul>
+<li>
+<a href="../Overview.html">Overview</a>
+</li>
+<li>
+<a href="#">Elements</a>
+<ul>
+<li>
+<a href="Text.html">Text</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">AutoSettings</a>
+<ul>
+<li>
+<a href="../../AutoSettings/Overview.html">Overview</a>
+</li>
+<li>
+<a href="../../AutoSettings/Local%20Settings.html">Local Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">ScriptAPI</a>
+<ul>
+<li>
+<a href="../../ScriptAPI/Getting%20Started.html">Getting Started</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Using%20Java%20Classes.html">Using Java Classes</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Registering%20a%20Script.html">Registering a Script</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Global%20Classes.html">Global Classes</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Global%20Instances.html">Global Instances</a>
+</li>
+<li>
+<a href="#">Creating Modules</a>
+<ul>
+<li>
+<a href="../../ScriptAPI/Creating%20Modules/Overview.html">Overview</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Creating%20Modules/Supported%20Events.html">Supported Events</a>
+</li>
+ <li>
+<a href="../../ScriptAPI/Creating%20Modules/Settings.html">Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="../../ScriptAPI/Creating%20Commands.html">Creating Commands</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Creating%20Inventory%20Tabs.html">Creating Inventory Tabs</a>
+</li>
+<li>
+<a href="../../ScriptAPI/Setting%20up%20Babel.html">Setting up Babel</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="js-footer-is-fixed">
+<div class="footer-extended">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="footer-extended-container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">About</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="../../../tos.html">Terms of Service</a>
+</li>
+<li>
+<a href="../../../privacy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="https://status.ccbluex.net/">Status</a>
+</li>
+<li>
+<a href="mailto:support@liquidbounce.net">Contact Us</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Downloads</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="../../../download.html">Releases</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/CCBlueX/LiquidBounce">Source code</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/CCBlueX/LiquidBounce/blob/master/LICENSE">License</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Docs</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="../../Tutorials.html">Tutorials</a>
+</li>
+<li>
+<a href="../../CustomHUD.html">CustomHUD</a>
+</li>
+<li>
+<a href="../../AutoSettings.html">AutoSettings</a>
+</li>
+<li>
+<a href="../../ScriptAPI.html">ScriptAPI</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="clearfix visible-xs-block"></div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Community</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a target="_blank" href="https://forums.ccbluex.net/">Forum</a>
+</li>
+<li>
+<a target="_blank" href="https://guilded.gg/CCBlueX">Guilded</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/ccbluex">YouTube</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex">Twitter</a>
+</li>
+<li>
+<a target="_blank" href="https://d.tube/#!/c/ccbluex">D.Tube</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-8">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Subscribe</h5>
+<ul class="socials-footer">
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-twitter"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-youtube-play"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-github-alt"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="footer-logo-wrapper">
+<a href="../../../index-2.html" class="logo-image ">
+<img src="../../../img/logos/ccbluex-logo.png" alt="logo">
+</a>
+<p class="slogan">Made
+<br>By
+<br>CCBlueX
+</p>
+</div>
+</div>
+<div class="col-md-9 col-sm-9 col-xs-12">
+<div class="footer-wrapper">
+<span class="scroll-top js-scroll-top">
+<i class="fa fa-angle-up"></i>
+</span>
+<ul class="footer-menu helper right">
+<li>
+<a href="mailto:support@liquidbounce.net">support@liquidbounce.net</a>
+</li>
+</ul>
+<p class="copyright helper right">&copy;
+<a href="https://ccbluex.net/">CCBlueX</a> 2015-2021 </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../../../js/prism.js"></script>
+<script src="../../../js/all.js"></script>
+</body>
+
+<!-- Mirrored from liquidbounce.net/docs/CustomHUD/Elements/Text by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Apr 2021 22:13:29 GMT -->
+</html>

@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from liquidbounce.net/scripts/view?id=5f4147062c282226492d6532 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Apr 2021 01:06:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base >
+<title>LiquidBounce &bull; LocalSettingsList</title>
+<meta name="author" content="CCBlueX">
+<meta name="description" content="This script provides a panel which displays all of your current local configs.">
+<meta name="page-topic" content="LiquidBounce">
+<meta http-equiv="content-language" content="en">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="liquidbounce, liquid, bounce, hack, hacked client, cheat, minecraft, mc, free, download, mc, mojang, hacker, cheater">
+<meta property="og:image" content="../img/logos/favicon.png">
+<script src="../cdn-cgi/apps/head/NngbkqOVXX-YasdApopc2nOQlvc.js"></script><link rel="icon" type="image/png" href="../img/logos/favicon.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/custom.css">
+<link rel="stylesheet" href="../css/script-site.css">
+<script src="../js/modernizr.js"></script>
+</head>
+<body class="">
+<div class="page js-page ">
+<div class="header header-over large">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-6 col-xs-6">
+<a href="http://liquidbounce.net/" class="logo-image logo-animated">
+<img src="http://liquidbounce.net/img/logos/logo-light.svg" alt="logo">
+</a>
+</div>
+<div class="col-md-9 col-sm-6 col-xs-6">
+<nav class="right helper">
+<ul class="menu sf-menu js-menu menu-light">
+<li>
+<a href="http://liquidbounce.net/">Home</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/download">Download</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/donate">Donate</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/changelogs">Changelogs</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/scripts">Scripts</a>
+</li>
+<li>
+<a href="#">Documentation</a>
+<ul>
+<li>
+<a href="http://liquidbounce.net/docs/Tutorials">Tutorials</a>
+<ul>
+<li>
+<a href="http://liquidbounce.net/docs/Tutorials/Installation">Installation</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/Tutorials/Installing a Script">Installing a Script</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/CustomHUD">CustomHUD</a>
+<ul>
+<li>
+<a href="http://liquidbounce.net/docs/CustomHUD/Overview">Overview</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/CustomHUD/Elements">Elements</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/AutoSettings">AutoSettings</a>
+<ul>
+<li>
+<a href="http://liquidbounce.net/docs/AutoSettings/Overview">Overview</a>
+ </li>
+<li>
+<a href="http://liquidbounce.net/docs/AutoSettings/Local Settings">Local Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/ScriptAPI">ScriptAPI</a>
+<ul>
+<li>
+<a href="http://liquidbounce.net/docs/ScriptAPI/Getting Started">Getting Started</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/ScriptAPI/Using Java Classes">Using Java Classes</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/ScriptAPI/Registering a Script">Registering a Script</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/ScriptAPI/Global Classes">Global Classes</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/ScriptAPI/Global Instances">Global Instances</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/ScriptAPI/Creating Modules">Creating Modules</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/ScriptAPI/Creating Commands">Creating Commands</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/ScriptAPI/Creating Inventory Tabs">Creating Inventory Tabs</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/ScriptAPI/Setting up Babel">Setting up Babel</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">Community</a>
+<ul>
+<li>
+<a target="_blank" href="https://youtube.com/ccbluex">YouTube</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex">Twitter</a>
+</li>
+<li>
+<a target="_blank" href="https://d.tube/#!/c/ccbluex">D.Tube</a>
+</li>
+<li>
+<a target="_blank" href="https://guilded.gg/CCBlueX">Guilded (Discord)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://forums.ccbluex.net/">Forum</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="header-back header-back-simple header-back-small">
+<div class="header-back-container">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="page-info page-info-simple">
+<h1 class="page-title">LocalSettingsList</h1>
+<h2 class="page-description">This script provides a panel which displays all of your current local configs.</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container site-content">
+<div class="main-content">
+<div class="row" style="padding-top: 60px;">
+<div class="col-sm-9">
+<div class="category-info readme" style="padding-top: 0;">
+<h3 class="category-title">Readme</h3>
+<p>Once you've loaded the script (the module will be enabled by itself), you have to enable the option <strong>'UsePanel'</strong>. As the module has to stay enabled for some reasons, you need to disable that option if you want to remove the panel.</p>
+<p>The panel displays every config you've saved in your settings folder. It'll update itself automatically as soon as you remove or add a config.
+How to use the panel:</p>
+<p>If you want to <strong>load</strong> a config, <strong>left-click</strong> the panel element with the name of that particular config.<br />
+If you want to <strong>overwrite</strong> a config with your current settings, <strong>right-click</strong> it.<br />
+In case you want to <strong>delete a config, </strong>mid-click** it.</p>
+<p>Accidentally ruining or deleting a config is annoying. Thus the option <strong>'RetardSafe'</strong> might help you. If that option is enabled, deleting and overwriting a config both require clicking twice within a short time.</p> </div>
+</div>
+<div class="col-sm-3">
+<div class="script-info">
+<div class="col-sm-12">
+<div class="script-info-title">Name</div>
+<div class="script-info-value">LocalSettingsList</div>
+</div>
+<div class="col-sm-6">
+<div class="script-info-title">Version</div>
+<div class="script-info-value">1.4.0</div>
+</div>
+<div class="col-sm-6">
+<div class="script-info-title">Author</div>
+<div class="script-info-value"><a href="https://forums.ccbluex.net/user/Nvarolotl">Nvarolotl</a></div>
+</div>
+<div class="col-sm-12">
+<div class="script-info-title">Last updated</div>
+<div class="script-info-value" title="08/31/2020 17:01">7 months ago</div>
+</div>
+<div class="col-sm-12">
+<div class="script-info-title">Compatible with</div>
+<div class="script-info-value">1.8.9</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12" style="padding-top: 20px;">
+<ul>
+<li><a href="http://liquidbounce.net/docs/Tutorials/Installing a Script">How to install scripts</a></li>
+</ul>
+<form method="POST" action="#">
+<button type="submit" name="download_submit" class="button helper mb30 stroke full blue">
+<i class="fa fa-download"></i>
+Download
+</button>
+</form>
+</div>
+ </div>
+</div>
+</div>
+</div>
+<footer class="js-footer-is-fixed">
+<div class="footer-extended">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="footer-extended-container">
+<div class="row">
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">About</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="http://liquidbounce.net/tos">Terms of Service</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/privacy">Privacy Policy</a>
+</li>
+<li>
+<a href="https://status.ccbluex.net/">Status</a>
+</li>
+<li>
+<a href="mailto:support@liquidbounce.net">Contact Us</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Downloads</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="https://liquidbounce.net/download">Releases</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/CCBlueX/LiquidBounce">Source code</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/CCBlueX/LiquidBounce/blob/master/LICENSE">License</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Docs</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a href="http://liquidbounce.net/docs/Tutorials">Tutorials</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/CustomHUD">CustomHUD</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/AutoSettings">AutoSettings</a>
+</li>
+<li>
+<a href="http://liquidbounce.net/docs/ScriptAPI">ScriptAPI</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="clearfix visible-xs-block"></div>
+<div class="col-md-2 col-sm-2 col-xs-4">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Community</h5>
+<ul class="footer-extended-menu-list">
+<li>
+<a target="_blank" href="https://forums.ccbluex.net/">Forum</a>
+</li>
+<li>
+<a target="_blank" href="https://guilded.gg/CCBlueX">Guilded</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/ccbluex">YouTube</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex">Twitter</a>
+</li>
+<li>
+<a target="_blank" href="https://d.tube/#!/c/ccbluex">D.Tube</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-8">
+<div class="footer-extended-menu">
+<h5 class="footer-extended-menu-title">Subscribe</h5>
+<ul class="socials-footer">
+<li>
+<a target="_blank" href="https://twitter.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-twitter"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-youtube-play"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://github.com/ccbluex" class="socials-footer-link">
+<i class="fa fa-github-alt"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="footer-logo-wrapper">
+<a href="http://liquidbounce.net/index.html" class="logo-image ">
+<img src="../img/logos/ccbluex-logo.png" alt="logo">
+</a>
+<p class="slogan">Made
+<br>By
+<br>CCBlueX
+</p>
+</div>
+</div>
+<div class="col-md-9 col-sm-9 col-xs-12">
+<div class="footer-wrapper">
+<span class="scroll-top js-scroll-top">
+<i class="fa fa-angle-up"></i>
+</span>
+<ul class="footer-menu helper right">
+<li>
+<a href="mailto:support@liquidbounce.net">support@liquidbounce.net</a>
+</li>
+</ul>
+<p class="copyright helper right">&copy;
+<a href="https://ccbluex.net/">CCBlueX</a> 2015-2021 </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer> </div>
+</div>
+<script src="../js/all.js"></script>
+</body>
+
+<!-- Mirrored from liquidbounce.net/scripts/view?id=5f4147062c282226492d6532 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Apr 2021 01:06:12 GMT -->
+</html>
